@@ -17,7 +17,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: darkgrey;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .meme-slider__wrapper {
@@ -30,6 +30,17 @@ img {
     margin: 0;
 }
 
+.meme-slider__item {
+    display: none;
+}
+
 .meme-slider__picture img {
     border-radius: 10px;
+}
+
+#meme-1:checked~.meme-slider__list .meme-slider__item:nth-child(1),
+#meme-2:checked~.meme-slider__list .meme-slider__item:nth-child(2),
+#meme-3:checked~.meme-slider__list .meme-slider__item:nth-child(3), 
+#meme-4:checked~.meme-slider__list .meme-slider__item:nth-child(4) {
+    display: flex;
 }

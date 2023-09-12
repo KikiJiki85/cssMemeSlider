@@ -161,3 +161,35 @@ input {
 .meme-slider__wrapper:has([data-radio="fourth" ]:checked) .meme-slider__list {
     transform: translateX(calc(-300% - 6rem));
 }
+
+@media (max-width: 31.3rem) {
+    .meme-slider__wrapper {
+        gap: 1rem;
+    }
+
+    .meme-slider__footer {
+        flex-direction: column-reverse;
+        gap: 1rem
+    }
+
+    .meme-slider__text {
+        align-self: start;
+        font-size: 1.5rem;
+    }
+
+    .meme-slider__label:has(.meme-slider__input:checked) .meme-slider__checked  {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+
+    .meme-slider__label {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .meme-slider__radio {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+}

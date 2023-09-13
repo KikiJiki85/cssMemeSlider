@@ -101,14 +101,16 @@ input {
 .meme-slider__controls {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.3rem;
 }
 
 .meme-slider__label{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+
     cursor: pointer;
 }
 
@@ -141,10 +143,8 @@ input {
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
-    cursor: default;
     background-color: grey;
 }
-
 
 .meme-slider__wrapper:has([data-radio="first" ]:checked) .meme-slider__list {
     transform: translateX(0);
